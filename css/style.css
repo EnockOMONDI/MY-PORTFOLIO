@@ -1,0 +1,36 @@
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+.footer-copyright{
+  padding-left: 460px;
+  padding-top: 120px;
+}
+body{
+  background-image: url(../static/coffee5.png);
+background-size: cover;
+  background-position: left 60px;
+  background-repeat: no-repeat;
+}
+.card{
+     width:500px;
+     height: 600px;
+    }
+.card1{
+  padding-left: 450px;
+  padding-top: 20px;
+}
+.intro{
+  padding-top: 40px;
+}
+.image{
+  padding-left: 50px;
+  padding-bottom: 10px;
+}
+.texttext{
+  padding-left: 550px;
+  padding-top: 50px;
+
+}
