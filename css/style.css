@@ -1,5 +1,8 @@
 
 
+
+
+/* spaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaace */
 .icon-block {
   padding: 0 15px;
 }
@@ -11,11 +14,17 @@
   padding-top: 120px;
 }
 body{
-  background-image: url(../static/coffee5.png);
+  background-image: url(../static/1edit1.png);
 background-size: cover;
-  background-position: left 60px;
+
   background-repeat: no-repeat;
 }
+h1{
+font-weight: bold;
+font-size: 80px;
+padding-top: 80PX;
+}
+
 .card{
      width:500px;
      height: 600px;
@@ -25,7 +34,7 @@ background-size: cover;
   padding-top: 20px;
 }
 .intro{
-  padding-top: 40px;
+  padding-top: 110px;
 }
 .image{
   padding-left: 50px;

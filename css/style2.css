@@ -1,10 +1,16 @@
+
 body{
-  background-image: url(../static/plain.jpg);
+background-color: #D3D3D3;
 background-size: cover;
   background-position: left 60px;
   background-repeat: no-repeat;
     text-decoration: none;
 }
+
+footer {
+  background-color:  linear-gradient(45deg, #ae1a31 0%,#db6b2a 99%);
+  }
+
 /* Achivements Section */
 /* #achievements {
 
