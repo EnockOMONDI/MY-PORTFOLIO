@@ -1,15 +1,19 @@
 $(function() {
 
-    $("input,textarea").jqBootstrapValidation({
+    $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
             // additional error messages or events
         },
         submitSuccess: function($form, event) {
-            event.preventDefault(); // prevent default submit behaviour
+            // Prevent spam click and default submit behaviour
+            $("#btnSubmit").attr("disabled", true);
+            event.preventDefault();
+            
             // get values from FORM
             var name = $("input#name").val();
             var email = $("input#email").val();
+            var phone = $("input#phone").val();
             var message = $("textarea#message").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
@@ -21,12 +25,14 @@ $(function() {
                 type: "POST",
                 data: {
                     name: name,
+                    phone: phone,
                     email: email,
                     message: message
                 },
                 cache: false,
                 success: function() {
-                    // Success message
+                    // Enable button & show success message
+                    $("#btnSubmit").attr("disabled", false);
                     $('#success').html("<div class='alert alert-success'>");
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
@@ -48,7 +54,7 @@ $(function() {
                     //clear all fields
                     $('#contactForm').trigger("reset");
                 },
-            })
+            });
         },
         filter: function() {
             return $(this).is(":visible");
@@ -61,8 +67,7 @@ $(function() {
     });
 });
 
-
-/*When clicking on Full hide fail/success boxes */
+// When clicking on Full hide fail/success boxes
 $('#name').focus(function() {
     $('#success').html('');
 });
