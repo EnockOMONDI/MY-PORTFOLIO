@@ -21,9 +21,22 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css"  href="css/style2.css">
+ <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+ <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
+ <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+ <!-- top page icon -->
+ <link rel="shortcut icon" type="image/png" href="img/icon.png"/>
+
+
+ <script type="text/javascript" src="js/modernizr.custom.js"></script>
+
+
+ <!-- CSS  -->
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+ <!-- <link href="css/styles3.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -59,7 +72,7 @@
                         <a href="#portfolio">Skills</a>
                     </li>
                     <li class="page-scroll">
-                        <a href=""target="_blank">Projects</a>
+                        <a href="#projects" >Projects</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contact">Contact</a>
@@ -225,8 +238,60 @@
             </div>
         </div>
     </section>
+<!--  pagation-->
+<section id="projects">
+  <div class="card1">
+  <div class="card hoverable small">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="img/portfolio/blog.png">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">KENYAN BLOGS<i class="material-icons right">more_vert</i></span>
+        <p><a href="https://github.com/EnockOMONDI/BLOG-V2.0" target="_blank"class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>View on github</a></p>
+      </div>
+    </div>
+    <ul class="pagination">
+      <li class="disabled"> <a href="#!"><i class="material-icons">chevron_left</i></a></li>
+      <li class="waves-effect"> <a href="projects.html">1</a></li>
+      <li class="waves-effect"><a href="pagation2.html">2</a></li>
+      <li class="waves-effect"><a href="pagation3.html">3</a></li>
+      <li class="waves-effect"><a href="pagation4.html">4</a></li>
+      <li class="waves-effect"><a href="pagation5.html">5</a></li>
+      <li class="waves-effect"><a href="pagation6.html">6</a></li>
+      <li class="waves-effect"><a href="pagation2.html"><i class="material-icons">chevron_right</i></a></li>
+    </ul>
 
 
+  </div>
+  <!-- Achievements Section -->
+  <div id="achievements" class="section dark-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-3">
+          <div class="achievement-box"> <span class="count">3</span>
+            <h4>Happy clients</h4>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-3">
+          <div class="achievement-box"> <span class="count">4000</span>
+            <h4>Working hours</h4>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-3">
+          <div class="achievement-box"> <span class="count">30</span>
+            <h4>Projects completed</h4>
+          </div>
+        </div>
+         <!-- <div class="col-md-3 col-sm-3">
+          <div class="achievement-box"> <span class="count">3</span>
+            <h4>Awards won</h4>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
@@ -284,7 +349,7 @@
 
     </section>
     <!-- Start of Async Drift Code -->
-<script>
+<!-- <script>
 "use strict";
 
 !function() {
@@ -309,7 +374,7 @@
 }();
 drift.SNIPPET_VERSION = '0.3.1';
 drift.load('whsd4ycbgniy');
-</script>
+</script> -->
 <!-- End of Async Drift Code -->
 
     <!-- Footer -->
@@ -376,7 +441,27 @@ drift.load('whsd4ycbgniy');
 
     <!-- Theme JavaScript -->
     <script src="js/freelancer.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
+
+<!-- pagation js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/SmoothScroll.js"></script>
+<script type="text/javascript" src="js/jquery.counterup.js"></script>
+<script type="text/javascript" src="js/waypoints.js"></script>
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+<script type="text/javascript" src="js/contact_me.js"></script>
+
+<!-- Javascripts
+    ================================================== -->
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
